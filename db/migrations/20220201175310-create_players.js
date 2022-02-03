@@ -15,6 +15,9 @@ module.exports = {
             score: {
               bsonType: 'number',
             },
+            dailyProgress: {
+              bsonType: 'array',
+            },            
             chips: {
               bsonType: 'number',
             },

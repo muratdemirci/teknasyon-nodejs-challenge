@@ -33,6 +33,7 @@ for (let index = 0; index < fakePlayerCount; index++) {
         userId: genRandUserId(),
         userName: casual.username.toLocaleLowerCase(),
         score: genRandInt(10000,99999),
+        dailyProgress: casual.array_of_integers(n = genRandInt(0, 10)),
         chips: genRandInt(0, 9999),
         age: genRandInt(13, 55)
     })

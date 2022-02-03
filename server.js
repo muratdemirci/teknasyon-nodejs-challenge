@@ -10,7 +10,7 @@ const createServer = async () => {
     connectDB()
 
     // Route files
-    // const players = require('./routes/players')
+    const players = require('./routes/players')
 
     const app = express()
     const apiUrl = process.env.API_URL || '/api/v1'
@@ -24,7 +24,7 @@ const createServer = async () => {
     // Enable CORS
     app.use(cors())
     // Mount routers use path
-    // app.use(`${apiUrl}/players`, players)
+    app.use(`${apiUrl}/players`, players)
 
     const PORT = process.env.PORT || 5000
 

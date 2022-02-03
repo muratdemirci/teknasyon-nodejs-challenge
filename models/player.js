@@ -15,6 +15,11 @@ const playerSchema = new mongoose.Schema({
         min:0,
         required: true
     },
+    dailyProgress: {
+        type: Array,
+        min:0,
+        required: true
+    },
     chips: {
         type: Number,
         min:0,
